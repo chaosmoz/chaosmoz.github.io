@@ -3,3 +3,6 @@
 :root {
   --card-bg: rgba(240, 237, 228, 0.9);
 }
+
+[data-theme='dark'] {
+  --card-bg: rgba(25, 28, 31, 0.9);
