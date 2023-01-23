@@ -1,0 +1,31 @@
+
+ /* 白天模式 */
+:root {
+  /* 所有页面背景 */
+  --card-bg: rgba(230, 230, 225, 0.9);
+  /* 按钮颜色 */
+  --btn-bg: rgba(112,124,147,1);
+  /* 鼠标悬浮时按钮颜色 */
+  --btn-hover-color: rgba(150,188,220,1);
+  /* 底部分割线和剪刀颜色 */
+  --hr-border: rgba(159,158,165,1);
+  --hr-before-color: rgba(131,154,173,1);
+}
+
+ /* 夜间模式 */
+[data-theme='dark'] {
+  /* 所有页面背景（夜间模式） */
+  --card-bg: rgba(25, 28, 31, 0.9);
+}
+
+ /* 公告喇叭颜色 */
+#aside-content .card-announcement .item-headline i {
+  color: rgba(221,137,90,0.8);
+}
+
+ /* 全局 */
+body {
+  /* 网页滚动条背景 */
+  background: rgba(98,100,109,1);
+
+}
