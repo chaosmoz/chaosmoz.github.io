@@ -1,0 +1,19 @@
+
+# favicon.png          # 网站图标（浏览器页签显示）
+# avatar.png           # 头像
+# index.jpg            # 主页顶部图
+# background.jpg       # 网页背景图
+# archive.jpg          # 归档页面顶部图
+# tag.jpg              # 标签页面顶部图
+# category.jpg         # 分类页面顶部图
+# about.jpg            # 关于页面顶部图
+# messageboard.jpg     # 留言板的顶部图
+# link.jpg             # 友情链接顶部图
+
+default_top.jpg      # 各页面/文章默认顶部图
+default_tag.jpg      # 标签子页面的默认顶部图
+default_category.jpg # 分类子页面的默认顶部图
+404.png              # 图片加载失败时的图片
+friend_404.gif       # 404动图
+
+引用地址：/images/xxxx.xxx
