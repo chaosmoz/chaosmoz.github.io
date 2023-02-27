@@ -1,9 +1,9 @@
-<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"><title>微博记录 2014&amp;earlier | Z's Blog</title><meta name="author" content="Z,793111695@qq.com"><meta name="copyright" content="Z"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#faebd7"><meta name="description" content="@BrokenSymtry&amp;emsp;2012-06-06 00:27:32 来自Kjava客户端&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;被初始所诅咒的生命，&amp;emsp;&amp;emsp;黑色灵魂支配着石头，&amp;emsp;&amp;emsp;占据在无限的时空里，&amp;emsp;&amp;emsp;虚无的主定义了信仰，&amp;emsp;&amp;emsp;存在于现实里的身体，&amp;emsp;&amp;emsp;是永远打不开的枷锁。&amp;emsp;&amp;">
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"><title>微博记录 2014&amp;earlier | Z's Blog</title><meta name="author" content="Z,793111695@qq.com"><meta name="copyright" content="Z"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#faebd7"><meta name="description" content="@BrokenSymtry  2012-06-06 00:27:32 来自Kjava客户端      被初始所诅咒的生命，   黑色灵魂支配着石头，   占据在无限的时空里，   虚无的主定义了信仰，   存在于现实里的身体，   是永远打不开的枷锁。      @BrokenSymtry  2012-07-22 11:58:10 来自S60客户端      多少春秋风雨改，多少崎岖不变爱，多少唏">
 <meta property="og:type" content="article">
 <meta property="og:title" content="微博记录 2014&amp;earlier">
 <meta property="og:url" content="https://chaosmoz.github.io/posts/95065b96/index.html">
 <meta property="og:site_name" content="Z&#39;s Blog">
-<meta property="og:description" content="@BrokenSymtry&amp;emsp;2012-06-06 00:27:32 来自Kjava客户端&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;被初始所诅咒的生命，&amp;emsp;&amp;emsp;黑色灵魂支配着石头，&amp;emsp;&amp;emsp;占据在无限的时空里，&amp;emsp;&amp;emsp;虚无的主定义了信仰，&amp;emsp;&amp;emsp;存在于现实里的身体，&amp;emsp;&amp;emsp;是永远打不开的枷锁。&amp;emsp;&amp;">
+<meta property="og:description" content="@BrokenSymtry  2012-06-06 00:27:32 来自Kjava客户端      被初始所诅咒的生命，   黑色灵魂支配着石头，   占据在无限的时空里，   虚无的主定义了信仰，   存在于现实里的身体，   是永远打不开的枷锁。      @BrokenSymtry  2012-07-22 11:58:10 来自S60客户端      多少春秋风雨改，多少崎岖不变爱，多少唏">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://chaosmoz.github.io/images/page_topimg/gallery_photograph.jpg">
 <meta property="article:published_time" content="2014-12-30T16:00:00.000Z">
@@ -15,7 +15,7 @@
 <meta name="twitter:image" content="https://chaosmoz.github.io/images/page_topimg/gallery_photograph.jpg"><link rel="shortcut icon" href="/images/page_topimg/favicon.png"><link rel="canonical" href="https://chaosmoz.github.io/posts/95065b96/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//hm.baidu.com"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>var _hmt = _hmt || [];
 (function() {
   var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?080003ee9ddf48dfffff5a8b9d8c619b";
+  hm.src = "https://hm.baidu.com/hm.js?a4ce4cb30405c838a11696209fdd2832";
   var s = document.getElementsByTagName("script")[0]; 
   s.parentNode.insertBefore(hm, s);
 })();
@@ -145,26 +145,11 @@
       }
       const t = saveToLocal.get('theme')
     
-          const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
-          const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
-          const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
-          const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
-
-          if (t === undefined) {
-            if (isLightMode) activateLightMode()
-            else if (isDarkMode) activateDarkMode()
-            else if (isNotSpecified || hasNoSupport) {
-              const now = new Date()
-              const hour = now.getHours()
-              const isNight = hour <= 6 || hour >= 18
-              isNight ? activateDarkMode() : activateLightMode()
-            }
-            window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
-              if (saveToLocal.get('theme') === undefined) {
-                e.matches ? activateDarkMode() : activateLightMode()
-              }
-            })
-          } else if (t === 'light') activateLightMode()
+          const now = new Date()
+          const hour = now.getHours()
+          const isNight = hour <= 6 || hour >= 18
+          if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+          else if (t === 'light') activateLightMode()
           else activateDarkMode()
         
       const asideStatus = saveToLocal.get('aside-status')
@@ -182,255 +167,459 @@
       }
     }
     detectApple()
-    })(window)</script><link rel="stylesheet" href="/css/card_bg.css"><meta name="generator" content="Hexo 5.4.0"></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/images/page_topimg/avatar.png" onerror="onerror=null;src='/images/page_topimg/link_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">6</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">5</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-book"></i><span> 文章</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 资源库</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/gallery/"><i class="fa-fw fas fa-images"></i><span> 图片</span></a></li><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/messageboard/"><i class="fa-fw fas fa-comment-dots"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 链接</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/images/page_topimg/gallery_photograph.jpg')"><nav id="nav"><span id="blog-info"><a href="/" title="Z's Blog"><span class="site-name">Z's Blog</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-book"></i><span> 文章</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 资源库</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/gallery/"><i class="fa-fw fas fa-images"></i><span> 图片</span></a></li><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/messageboard/"><i class="fa-fw fas fa-comment-dots"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 链接</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">微博记录 2014&amp;earlier</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2014-12-30T16:00:00.000Z" title="发表于 2014-12-31 00:00:00">2014-12-31</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2014-12-30T16:00:00.000Z" title="更新于 2014-12-31 00:00:00">2014-12-31</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%86%99%E4%BD%9C/">写作</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">2.3k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>10分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="微博记录 2014&amp;earlier"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><div class="note modern"><h3 id="BrokenSymtry"><a href="#BrokenSymtry" class="headerlink" title="@BrokenSymtry"></a>@BrokenSymtry</h3><p>&emsp;<em>2012-06-06 00:27:32 来自Kjava客户端</em><br>&emsp;&emsp;<br>&emsp;&emsp;被初始所诅咒的生命，<br>&emsp;&emsp;黑色灵魂支配着石头，<br>&emsp;&emsp;占据在无限的时空里，<br>&emsp;&emsp;虚无的主定义了信仰，<br>&emsp;&emsp;存在于现实里的身体，<br>&emsp;&emsp;是永远打不开的枷锁。<br>&emsp;&emsp; </p>
-</div>
-
-<hr>
-<div class="note modern"><h3 id="BrokenSymtry"><a href="#BrokenSymtry" class="headerlink" title="@BrokenSymtry"></a>@BrokenSymtry</h3><p>&emsp;<em>2012-07-22 11:58:10 来自S60客户端</em><br>&emsp;&emsp;<br>&emsp;&emsp;多少春秋风雨改，多少崎岖不变爱，多少唏嘘的你在人海…~ ♪ ​​​<br>&emsp;&emsp; </p>
-</div>
-
-<hr>
-<div class="note modern"><h3 id="BrokenSymtry"><a href="#BrokenSymtry" class="headerlink" title="@BrokenSymtry"></a>@BrokenSymtry</h3><p>&emsp;<em>2012-07-25 18:39:49 来自S60客户端</em><br>&emsp;&emsp;<br>&emsp;&emsp;炙热的红色电弧！<br>&emsp;&emsp; </p>
-</div>
-
-<hr>
-<div class="note modern"><h3 id="BrokenSymtry"><a href="#BrokenSymtry" class="headerlink" title="@BrokenSymtry"></a>@BrokenSymtry</h3><p>&emsp;<em>2012-08-10 11:46:59 来自S60客户端</em><br>&emsp;&emsp;<br>&emsp;&emsp;好强劲的BASS![给力] 重低音[给力]<br>&emsp;&emsp;</p>
-</div>
-
-<hr>
-<div class="note modern"><h3 id="BrokenSymtry"><a href="#BrokenSymtry" class="headerlink" title="@BrokenSymtry"></a>@BrokenSymtry</h3><p>&emsp;<em>2012-08-13 12:43:35 来自S60客户端</em><br>&emsp;&emsp;<br>&emsp;&emsp;”as time goes by.” ~<br>&emsp;&emsp;</p>
-</div>
-
-<hr>
-<div class="note modern"><h3 id="BrokenSymtry"><a href="#BrokenSymtry" class="headerlink" title="@BrokenSymtry"></a>@BrokenSymtry</h3><p>&emsp;<em>2012-08-14 00:49:34 来自S60客户端</em><br>&emsp;&emsp;<br>&emsp;&emsp;是什么浸透我黑色躯壳。<br>&emsp;&emsp;</p>
-</div>
-
-<hr>
-<div class="note modern"><h3 id="BrokenSymtry"><a href="#BrokenSymtry" class="headerlink" title="@BrokenSymtry"></a>@BrokenSymtry</h3><p>&emsp;<em>2012-08-24 01:42:27 来自S60客户端</em><br>&emsp;&emsp;<br>&emsp;&emsp;无意对一切话别，无意却远走它方~♪<br>&emsp;&emsp;</p>
-</div>
-
-<hr>
-<div class="note modern"><h3 id="BrokenSymtry"><a href="#BrokenSymtry" class="headerlink" title="@BrokenSymtry"></a>@BrokenSymtry</h3><p>&emsp;<em>2012-08-27 23:23:15 来自S60客户端</em><br>&emsp;&emsp;<br>&emsp;&emsp;装不出不羁~♪<br>&emsp;&emsp;</p>
-</div>
-
-<hr>
-<div class="note modern"><h3 id="BrokenSymtry"><a href="#BrokenSymtry" class="headerlink" title="@BrokenSymtry"></a>@BrokenSymtry</h3><p>&emsp;<em>2012-11-24 00:41:41 来自S60客户端</em><br>&emsp;&emsp;<br>&emsp;&emsp;结束在疲累的跑向一个又一个假像？<br>&emsp;&emsp;</p>
-</div>
-
-<hr>
-<div class="note modern"><h3 id="BrokenSymtry"><a href="#BrokenSymtry" class="headerlink" title="@BrokenSymtry"></a>@BrokenSymtry</h3><p>&emsp;<em>2012-11-25 00:02:19 来自S60客户端</em><br>&emsp;&emsp;<br>&emsp;&emsp;音浪太强<del>不晃</del>会被撞到地上，音浪太强<del>不晃</del>会被撞到地上~[音乐][奥特曼]<br>&emsp;&emsp;</p>
-</div>
-
-<hr>
-<div class="note modern"><h3 id="BrokenSymtry"><a href="#BrokenSymtry" class="headerlink" title="@BrokenSymtry"></a>@BrokenSymtry</h3><p>&emsp;<em>2013-01-13 10:28:34 来自微博 weibo.com</em><br>&emsp;&emsp;<br>&emsp;&emsp;下酒事。<br>&emsp;&emsp;</p>
-</div>
-
-<hr>
-<div class="note modern"><h3 id="BrokenSymtry"><a href="#BrokenSymtry" class="headerlink" title="@BrokenSymtry"></a>@BrokenSymtry</h3><p>&emsp;<em>2013-01-16 00:01:19 来自S60客户端</em><br>&emsp;&emsp;<br>&emsp;&emsp;才明白即使爆炸 直到第一千次， 亦不想那震撼离开，还期望天清气朗 就算第一亿次，都想我看着能喝彩<br>&emsp;&emsp;</p>
-</div>
-
-<hr>
-<div class="note modern"><h3 id="BrokenSymtry"><a href="#BrokenSymtry" class="headerlink" title="@BrokenSymtry"></a>@BrokenSymtry</h3><p>&emsp;<em>2013-02-17 20:13:07 来自S60客户端</em><br>&emsp;&emsp;<br>&emsp;&emsp;Asteroid belt, Kuiper Belt, Oort cloud.<br>&emsp;&emsp;</p>
-</div>
-
-<hr>
-<div class="note modern"><h3 id="BrokenSymtry"><a href="#BrokenSymtry" class="headerlink" title="@BrokenSymtry"></a>@BrokenSymtry</h3><p>&emsp;<em>2013-02-21 12:35:02 来自S60客户端</em><br>&emsp;&emsp;<br>&emsp;&emsp;Rock德普<br>&emsp;&emsp;</p>
-</div>
-
-<hr>
-<div class="note modern"><h3 id="BrokenSymtry"><a href="#BrokenSymtry" class="headerlink" title="@BrokenSymtry"></a>@BrokenSymtry</h3><p>&emsp;<em>2013-02-24 17:51:00 来自S60客户端</em><br>&emsp;&emsp;<br>&emsp;&emsp;last thing I remember, I was running for the door. I had find the passage back, to the place I was before. …~ [音乐]<br>&emsp;&emsp;</p>
-</div>
-
-<hr>
-<div class="note modern"><h3 id="BrokenSymtry"><a href="#BrokenSymtry" class="headerlink" title="@BrokenSymtry"></a>@BrokenSymtry</h3><p>&emsp;<em>2013-03-02 00:41:46 来自S60客户端</em><br>&emsp;&emsp;<br>&emsp;&emsp;我只是想要知道 有关于这个世界的一切 。<br>&emsp;&emsp;</p>
-</div>
-
-<hr>
-<div class="note modern"><h3 id="BrokenSymtry"><a href="#BrokenSymtry" class="headerlink" title="@BrokenSymtry"></a>@BrokenSymtry</h3><p>&emsp;<em>2013-03-11 01:05:02 来自S60客户端</em><br>&emsp;&emsp;<br>&emsp;&emsp;察其始而本无生<br>&emsp;&emsp;</p>
-</div>
-
-<hr>
-<div class="note modern"><h3 id="BrokenSymtry"><a href="#BrokenSymtry" class="headerlink" title="@BrokenSymtry"></a>@BrokenSymtry</h3><p>&emsp;<em>2013-03-13 01:07:34 来自S60客户端</em><br>&emsp;&emsp;<br>&emsp;&emsp;生命只是一种抗逆的体现。<br>&emsp;&emsp;</p>
-</div>
-
-<hr>
-<div class="note modern"><h3 id="BrokenSymtry"><a href="#BrokenSymtry" class="headerlink" title="@BrokenSymtry"></a>@BrokenSymtry</h3><p>&emsp;<em>2013-03-28 22:22:00 来自uc浏览器ios</em><br>&emsp;&emsp;<br>&emsp;&emsp;说来实在嘲讽。<br>&emsp;&emsp;</p>
-</div>
-
-<hr>
-<div class="note modern"><h3 id="BrokenSymtry"><a href="#BrokenSymtry" class="headerlink" title="@BrokenSymtry"></a>@BrokenSymtry</h3><p>&emsp;<em>2013-03-30 13:05:13 来自uc浏览器ios</em><br>&emsp;&emsp;<br>&emsp;&emsp;有什么抛不低。<br>&emsp;&emsp;</p>
-</div>
-
-<hr>
-<div class="note modern"><h3 id="BrokenSymtry"><a href="#BrokenSymtry" class="headerlink" title="@BrokenSymtry"></a>@BrokenSymtry</h3><p>&emsp;<em>2013-04-19 23:51:41 来自S60客户端</em><br>&emsp;&emsp;<br>&emsp;&emsp;Starry starry night, paint your palette blue and gray~[音乐]<br>&emsp;&emsp;</p>
-</div>
-
-<hr>
-<div class="note modern"><h3 id="BrokenSymtry"><a href="#BrokenSymtry" class="headerlink" title="@BrokenSymtry"></a>@BrokenSymtry</h3><p>&emsp;<em>2013-04-27 23:35:13 来自S60客户端</em><br>&emsp;&emsp;<br>&emsp;&emsp;或许那些未知本身 就是美的一部分 。<br>&emsp;&emsp;</p>
-</div>
-
-<hr>
-<div class="note modern"><h3 id="BrokenSymtry"><a href="#BrokenSymtry" class="headerlink" title="@BrokenSymtry"></a>@BrokenSymtry</h3><p>&emsp;<em>2013-05-06 00:10:07 来自S60客户端</em><br>&emsp;&emsp;<br>&emsp;&emsp;好风光似幻似虚，谁明人生乐趣 ~ [音乐]<br>&emsp;&emsp;</p>
-</div>
-
-<hr>
-<div class="note modern"><h3 id="BrokenSymtry"><a href="#BrokenSymtry" class="headerlink" title="@BrokenSymtry"></a>@BrokenSymtry</h3><p>&emsp;<em>2013-05-11 17:10:56 来自S60客户端</em><br>&emsp;&emsp;<br>&emsp;&emsp;The mask I wear is one .<br>&emsp;&emsp;</p>
-</div>
-
-<hr>
-<div class="note modern"><h3 id="BrokenSymtry"><a href="#BrokenSymtry" class="headerlink" title="@BrokenSymtry"></a>@BrokenSymtry</h3><p>&emsp;<em>2013-05-20 00:53:12 来自S60客户端</em><br>&emsp;&emsp;<br>&emsp;&emsp;Moroccan moonlight in your eyes ~[音乐]<br>&emsp;&emsp;</p>
-</div>
-
-<hr>
-<div class="note modern"><h3 id="BrokenSymtry"><a href="#BrokenSymtry" class="headerlink" title="@BrokenSymtry"></a>@BrokenSymtry</h3><p>&emsp;<em>2013-05-25 19:52:35 来自微博桌面</em><br>&emsp;&emsp;<br>&emsp;&emsp;感谢你，歌声里伴我跨过~[音乐]<br>&emsp;&emsp;</p>
-</div>
-
-<hr>
-<div class="note modern"><h3 id="BrokenSymtry"><a href="#BrokenSymtry" class="headerlink" title="@BrokenSymtry"></a>@BrokenSymtry</h3><p>&emsp;<em>2013-06-01 01:34:37 来自S60客户端</em><br>&emsp;&emsp;<br>&emsp;&emsp;像培养皿里的细菌一样，重复上演？<br>&emsp;&emsp;</p>
-</div>
-
-<hr>
-<div class="note modern"><h3 id="BrokenSymtry"><a href="#BrokenSymtry" class="headerlink" title="@BrokenSymtry"></a>@BrokenSymtry</h3><p>&emsp;<em>2013-06-23 01:50:31 来自S60客户端</em><br>&emsp;&emsp;<br>&emsp;&emsp;如果说之后的一切都是建立在放错位置的砖块之上，或许有一天它就会崩塌，像反粒子那样湮灭吧？<br>&emsp;&emsp;</p>
-</div>
-
-<hr>
-<div class="note modern"><h3 id="BrokenSymtry"><a href="#BrokenSymtry" class="headerlink" title="@BrokenSymtry"></a>@BrokenSymtry</h3><p>&emsp;<em>2013-07-07 21:17:55 来自微博 weibo.com</em><br>&emsp;&emsp;<br>&emsp;&emsp;莫名的生存，莫名的死去，花 风 城市 都是如此。<br>&emsp;&emsp;</p>
-</div>
-
-<hr>
-<div class="note modern"><h3 id="BrokenSymtry"><a href="#BrokenSymtry" class="headerlink" title="@BrokenSymtry"></a>@BrokenSymtry</h3><p>&emsp;<em>2013-07-10 01:54:53 来自S60客户端</em><br>&emsp;&emsp;<br>&emsp;&emsp;Perhaps there is no answer .<br>&emsp;&emsp;</p>
-</div>
-
-<hr>
-<div class="note modern"><h3 id="BrokenSymtry"><a href="#BrokenSymtry" class="headerlink" title="@BrokenSymtry"></a>@BrokenSymtry</h3><p>&emsp;<em>2013-07-23 16:50:37 来自微博手机版</em><br>&emsp;&emsp;<br>&emsp;&emsp;以前人们在四月开始收获 躺在高高的谷堆上面笑着~[音乐]<br>&emsp;&emsp;</p>
-</div>
-
-<hr>
-<div class="note modern"><h3 id="BrokenSymtry"><a href="#BrokenSymtry" class="headerlink" title="@BrokenSymtry"></a>@BrokenSymtry</h3><p>&emsp;<em>2013-08-08 11:59:36 来自Android客户端</em><br>&emsp;&emsp;<br>&emsp;&emsp;“迄今所有实验都肯定了量子力学的正确性， 但这只表明：它在人类迄今实践所及的领域是正确的。量子力学并非绝对真理。量子力学并没有，也不可能关闭人们进一步认识自然界的道路。量子力学与广义相对论之间的矛盾并未解 决。”—— 曾谨言<br>&emsp;&emsp;</p>
-</div>
-
-<hr>
-<div class="note modern"><h3 id="BrokenSymtry"><a href="#BrokenSymtry" class="headerlink" title="@BrokenSymtry"></a>@BrokenSymtry</h3><p>&emsp;* 2013-08-09 08:28:35 来自Android客户端*<br>&emsp;&emsp;<br>&emsp;&emsp;” That’s the beauty of music. They can’t take that away from you. “<br>&emsp;&emsp;</p>
-</div>
-
-<hr>
-<div class="note modern"><h3 id="BrokenSymtry"><a href="#BrokenSymtry" class="headerlink" title="@BrokenSymtry"></a>@BrokenSymtry</h3><p>&emsp;<em>2013-08-12 02:39:47 来自爱马克</em><br>&emsp;&emsp;<br>&emsp;&emsp;“真正的界限并不是万有理论，而恰恰是那些我们根本没有意识到的问题。”————[小红猪]知识之界：有些事我们永远不会懂<br>&emsp;&emsp;</p>
-</div>
-
-<hr>
-<div class="note modern"><h3 id="BrokenSymtry"><a href="#BrokenSymtry" class="headerlink" title="@BrokenSymtry"></a>@BrokenSymtry</h3><p>&emsp;<em>2013-08-19 02:00:31 来自Android客户端</em><br>&emsp;&emsp;<br>&emsp;&emsp;无穷复杂，因而有无穷的创造性。<br>&emsp;&emsp;</p>
-</div>
-
-<hr>
-<div class="note modern"><h3 id="BrokenSymtry"><a href="#BrokenSymtry" class="headerlink" title="@BrokenSymtry"></a>@BrokenSymtry</h3><p>&emsp;<em>2013-08-31 18:04:49 来自Android客户端</em><br>&emsp;&emsp;<br>&emsp;&emsp;高一闲趣。<br>&emsp;&emsp;</p>
-</div>
-
-<hr>
-<div class="note modern"><h3 id="BrokenSymtry"><a href="#BrokenSymtry" class="headerlink" title="@BrokenSymtry"></a>@BrokenSymtry</h3><p>&emsp;<em>2013-09-14 22:10:49 来自Android客户端</em><br>&emsp;&emsp;<br>&emsp;&emsp;“星空”<br>&emsp;&emsp;</p>
-</div>
-
-<hr>
-<div class="note modern"><h3 id="BrokenSymtry"><a href="#BrokenSymtry" class="headerlink" title="@BrokenSymtry"></a>@BrokenSymtry</h3><p>&emsp;<em>2013-10-01 01:37:05 来自Android客户端</em><br>&emsp;&emsp;<br>&emsp;&emsp;刻了许多光盘，却没人有唱片机。或许那些彩虹一样的条纹也是不会让人感到无聊吧。<br>&emsp;&emsp;</p>
-</div>
-
-<hr>
-<div class="note modern"><h3 id="BrokenSymtry"><a href="#BrokenSymtry" class="headerlink" title="@BrokenSymtry"></a>@BrokenSymtry</h3><p>&emsp;<em>2013-10-27 02:54:20 来自Android客户端</em><br>&emsp;&emsp;<br>&emsp;&emsp;”Since the beginning of my body changes in a number of wonderful, I began to reality a lot of things are not quite the same view”.—— Wikus . 《DISTRICT 9》<br>&emsp;&emsp;</p>
-</div>
-
-<hr>
-<div class="note modern"><h3 id="BrokenSymtry"><a href="#BrokenSymtry" class="headerlink" title="@BrokenSymtry"></a>@BrokenSymtry</h3><p>&emsp;<em>2013-12-26 01:33:43 来自Android客户端</em><br>&emsp;&emsp;<br>&emsp;&emsp;“那笑容是夏季~[音乐]<br>&emsp;&emsp;</p>
-</div>
-
-<hr>
-<div class="note modern"><h3 id="BrokenSymtry"><a href="#BrokenSymtry" class="headerlink" title="@BrokenSymtry"></a>@BrokenSymtry</h3><p>&emsp;<em>2013-12-31 11:48:26 来自Android客户端</em><br>&emsp;&emsp;<br>&emsp;&emsp;B-)<br>&emsp;&emsp;</p>
-</div>
-
-<hr>
-<div class="note modern"><h3 id="BrokenSymtry"><a href="#BrokenSymtry" class="headerlink" title="@BrokenSymtry"></a>@BrokenSymtry</h3><p>&emsp;<em>2014-01-04 13:09:24 来自Android客户端</em><br>&emsp;&emsp;<br>&emsp;&emsp;喧闹映衬下的一丝安静，充斥着内心的律动，像无规则波动中的一小段螺旋线，变得让人着迷。♪ ​​​<br>&emsp;&emsp;</p>
-</div>
-
-<hr>
-<div class="note modern"><h3 id="BrokenSymtry"><a href="#BrokenSymtry" class="headerlink" title="@BrokenSymtry"></a>@BrokenSymtry</h3><p>&emsp;<em>2014-01-16 00:08:00 来自Android客户端</em><br>&emsp;&emsp;<br>&emsp;&emsp;常情如此不可推卸～<br>&emsp;&emsp;</p>
-</div>
-
-<hr>
-<div class="note modern"><h3 id="BrokenSymtry"><a href="#BrokenSymtry" class="headerlink" title="@BrokenSymtry"></a>@BrokenSymtry</h3><p>&emsp;<em>2014-01-17 23:10:52 来自Android客户端</em><br>&emsp;&emsp;<br>&emsp;&emsp;那些梦的碎片里，一直流淌着一种奇异的忧伤。<br>&emsp;&emsp;</p>
-</div>
-
-<hr>
-<div class="note modern"><h3 id="BrokenSymtry"><a href="#BrokenSymtry" class="headerlink" title="@BrokenSymtry"></a>@BrokenSymtry</h3><p>&emsp;<em>2014-01-17 23:10:52 来自Android客户端</em><br>&emsp;&emsp;<br>&emsp;&emsp;在重低音里溶解吧<br>&emsp;&emsp;</p>
-</div>
-
-<hr>
-<div class="note modern"><h3 id="BrokenSymtry"><a href="#BrokenSymtry" class="headerlink" title="@BrokenSymtry"></a>@BrokenSymtry</h3><p>&emsp;<em>2014-02-01 21:29:06 来自Android客户端</em><br>&emsp;&emsp;<br>&emsp;&emsp;学校。<br>&emsp;&emsp;</p>
-</div>
-
-<hr>
-<div class="note modern"><h3 id="BrokenSymtry"><a href="#BrokenSymtry" class="headerlink" title="@BrokenSymtry"></a>@BrokenSymtry</h3><p>&emsp;<em>2014-02-06 02:33:00 来自Android客户端</em><br>&emsp;&emsp;<br>&emsp;&emsp;夜行动物 (▔ ▔) 。_冷雨夜 ​​​♪<br>&emsp;&emsp;</p>
-</div>
-
-<hr>
-<div class="note modern"><h3 id="BrokenSymtry"><a href="#BrokenSymtry" class="headerlink" title="@BrokenSymtry"></a>@BrokenSymtry</h3><p>&emsp;<em>2014-03-06 01:15:01 来自Android客户端</em><br>&emsp;&emsp;<br>&emsp;&emsp;“那么一瞬，彷佛一切都可以得到宽恕”————《核融合炉》<br>&emsp;&emsp;</p>
-</div>
-
-<hr>
-<div class="note modern"><h3 id="BrokenSymtry"><a href="#BrokenSymtry" class="headerlink" title="@BrokenSymtry"></a>@BrokenSymtry</h3><p>&emsp;<em>2014-04-05 16:31:09 来自Android客户端</em><br>&emsp;&emsp;<br>&emsp;&emsp;My life is brilliant, my love is pure, I saw an angel, of that I’m sure~<br>&emsp;&emsp;<br><img src="https://tva2.sinaimg.cn/mw690/9fa4f905jw1ef4sqegpnkj20bx08c74w.jpg" alt="1"></p>
+    })(window)</script><link rel="stylesheet" href="/css/card_bg.css"><meta name="generator" content="Hexo 5.4.0"></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/images/page_topimg/avatar.png" onerror="onerror=null;src='/images/page_topimg/link_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">10</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">5</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-book"></i><span> 文章</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 资源库</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/gallery/"><i class="fa-fw fas fa-images"></i><span> 图片</span></a></li><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/messageboard/"><i class="fa-fw fas fa-comment-dots"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 链接</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/images/page_topimg/gallery_photograph.jpg')"><nav id="nav"><span id="blog-info"><a href="/" title="Z's Blog"><span class="site-name">Z's Blog</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-book"></i><span> 文章</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 资源库</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/gallery/"><i class="fa-fw fas fa-images"></i><span> 图片</span></a></li><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/messageboard/"><i class="fa-fw fas fa-comment-dots"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 链接</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">微博记录 2014&amp;earlier</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2014-12-30T16:00:00.000Z" title="发表于 2014-12-31 00:00:00">2014-12-31</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2014-12-30T16:00:00.000Z" title="更新于 2014-12-31 00:00:00">2014-12-31</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%86%99%E4%BD%9C/">写作</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">1.8k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>7分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="微博记录 2014&amp;earlier"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><div class="note modern"><h3 id="BrokenSymtry">@BrokenSymtry</h3>
+<p> <em>2012-06-06 00:27:32 来自Kjava客户端</em><br>
+  <br>
+  被初始所诅咒的生命，<br>
+  黑色灵魂支配着石头，<br>
+  占据在无限的时空里，<br>
+  虚无的主定义了信仰，<br>
+  存在于现实里的身体，<br>
+  是永远打不开的枷锁。<br>
+  </p>
 </div>
 <hr>
-<div class="note modern"><h3 id="BrokenSymtry"><a href="#BrokenSymtry" class="headerlink" title="@BrokenSymtry"></a>@BrokenSymtry</h3><p>&emsp;<em>2014-04-13 23:59:18 来自Android客户端</em><br>&emsp;&emsp;<br>&emsp;&emsp;出现在学校的异次元带路人<br>&emsp;&emsp;</p>
+<div class="note modern"><h3 id="BrokenSymtry">@BrokenSymtry</h3>
+<p> <em>2012-07-22 11:58:10 来自S60客户端</em><br>
+  <br>
+  多少春秋风雨改，多少崎岖不变爱，多少唏嘘的你在人海…~ ♪ ​​​<br>
+  </p>
 </div>
-
 <hr>
-<div class="note modern"><h3 id="BrokenSymtry"><a href="#BrokenSymtry" class="headerlink" title="@BrokenSymtry"></a>@BrokenSymtry</h3><p>&emsp;<em>2014-04-22 23:49:19 来自Android客户端</em><br>&emsp;&emsp;<br>&emsp;&emsp;放则放矣，庸何伤乎。<br>&emsp;&emsp;</p>
+<div class="note modern"><h3 id="BrokenSymtry">@BrokenSymtry</h3>
+<p> <em>2012-07-25 18:39:49 来自S60客户端</em><br>
+  <br>
+  炙热的红色电弧！<br>
+  </p>
 </div>
-
 <hr>
-<div class="note modern"><h3 id="BrokenSymtry"><a href="#BrokenSymtry" class="headerlink" title="@BrokenSymtry"></a>@BrokenSymtry</h3><p>&emsp;<em>2014-05-20 23:09:13 来自Android客户端</em><br>&emsp;&emsp;<br>&emsp;&emsp;· 堆芯溶解<br>&emsp;&emsp;</p>
+<div class="note modern"><h3 id="BrokenSymtry">@BrokenSymtry</h3>
+<p> <em>2012-08-10 11:46:59 来自S60客户端</em><br>
+  <br>
+  好强劲的BASS![给力] 重低音[给力]<br>
+  </p>
 </div>
-
 <hr>
-<div class="note modern"><h3 id="BrokenSymtry"><a href="#BrokenSymtry" class="headerlink" title="@BrokenSymtry"></a>@BrokenSymtry</h3><p>&emsp;<em>2014-06-21 05:18:21 来自Android客户端</em><br>&emsp;&emsp;<br>&emsp;&emsp;从前谈电影，心中最爱是看剧情变好，而不感牵强。<br>&emsp;&emsp;</p>
+<div class="note modern"><h3 id="BrokenSymtry">@BrokenSymtry</h3>
+<p> <em>2012-08-13 12:43:35 来自S60客户端</em><br>
+  <br>
+  “as time goes by.” ~<br>
+  </p>
 </div>
-
 <hr>
-<div class="note modern"><h3 id="BrokenSymtry"><a href="#BrokenSymtry" class="headerlink" title="@BrokenSymtry"></a>@BrokenSymtry</h3><p>&emsp;<em>2014-07-12 04:57:33 来自Android客户端</em><br>&emsp;&emsp;<br>&emsp;&emsp;今晚风很轻云很美月亮太圆 天快亮了鸟儿醒了我睡不着。<br>&emsp;&emsp;</p>
+<div class="note modern"><h3 id="BrokenSymtry">@BrokenSymtry</h3>
+<p> <em>2012-08-14 00:49:34 来自S60客户端</em><br>
+  <br>
+  是什么浸透我黑色躯壳。<br>
+  </p>
 </div>
-
 <hr>
-<div class="note modern"><h3 id="BrokenSymtry"><a href="#BrokenSymtry" class="headerlink" title="@BrokenSymtry"></a>@BrokenSymtry</h3><p>&emsp;<em>2014-07-21 23:17:24 来自360安全浏览器</em><br>&emsp;&emsp;<br>&emsp;&emsp;我听见夏的离去。<br>&emsp;&emsp;</p>
+<div class="note modern"><h3 id="BrokenSymtry">@BrokenSymtry</h3>
+<p> <em>2012-08-24 01:42:27 来自S60客户端</em><br>
+  <br>
+  无意对一切话别，无意却远走它方~♪<br>
+  </p>
 </div>
-
 <hr>
-<div class="note modern"><h3 id="BrokenSymtry"><a href="#BrokenSymtry" class="headerlink" title="@BrokenSymtry"></a>@BrokenSymtry</h3><p>&emsp;<em>2014-07-05 05:24:19 来自Android客户端</em><br>&emsp;&emsp;<br>&emsp;&emsp;蓝色的新月藏在城市后面。<br>&emsp;&emsp;</p>
+<div class="note modern"><h3 id="BrokenSymtry">@BrokenSymtry</h3>
+<p> <em>2012-08-27 23:23:15 来自S60客户端</em><br>
+  <br>
+  装不出不羁~♪<br>
+  </p>
 </div>
-
-
 <hr>
-<div class="note modern"><h3 id="BrokenSymtry"><a href="#BrokenSymtry" class="headerlink" title="@BrokenSymtry"></a>@BrokenSymtry</h3><p>&emsp;<em>这就是“不可視境界限”吗哈哈，sayounara 。</em><br>&emsp;&emsp;<br>&emsp;&emsp;这就是“不可視境界限”吗哈哈，sayounara  。<br>&emsp;&emsp;<br><img src="https://tva2.sinaimg.cn/mw690/9fa4f905jw1ejh4mqkmpfj218g0xcac0.jpg" alt="1"></p>
+<div class="note modern"><h3 id="BrokenSymtry">@BrokenSymtry</h3>
+<p> <em>2012-11-24 00:41:41 来自S60客户端</em><br>
+  <br>
+  结束在疲累的跑向一个又一个假像？<br>
+  </p>
 </div>
-
 <hr>
-<div class="note modern"><h3 id="BrokenSymtry"><a href="#BrokenSymtry" class="headerlink" title="@BrokenSymtry"></a>@BrokenSymtry</h3><p>&emsp;<em>2014-08-25 03:08:01 来自红米手机</em><br>&emsp;&emsp;<br>&emsp;&emsp;再见了，石狮的夜 🎃 。 ​​​<br>&emsp;&emsp;<br> <div align=center> <img src="https://tva2.sinaimg.cn/mw690/9fa4f905jw1ejobjqlaq2j20qo0zkdw5.jpg" width = 60%/> </div></p>
+<div class="note modern"><h3 id="BrokenSymtry">@BrokenSymtry</h3>
+<p> <em>2012-11-25 00:02:19 来自S60客户端</em><br>
+  <br>
+  音浪太强~不晃~会被撞到地上，音浪太强~不晃~会被撞到地上~[音乐][奥特曼]<br>
+  </p>
 </div>
-
 <hr>
-<div class="note modern"><h3 id="BrokenSymtry"><a href="#BrokenSymtry" class="headerlink" title="@BrokenSymtry"></a>@BrokenSymtry</h3><p>&emsp;<em>2014-10-24 01:32:04 来自红米手机</em><br>&emsp;&emsp;<br>&emsp;&emsp;巨型异变细胞罐头。 ​​​<br> <div align=center> <img src="https://tva4.sinaimg.cn/mw690/9fa4f905jw1ellllntxcej20xc18gjzx.jpg" width = 50%/> </div></p>
+<div class="note modern"><h3 id="BrokenSymtry">@BrokenSymtry</h3>
+<p> <em>2013-01-13 10:28:34 来自微博 <a target="_blank" rel="noopener" href="http://weibo.com">weibo.com</a></em><br>
+  <br>
+  下酒事。<br>
+  </p>
 </div>
-
 <hr>
-<div class="note modern"><h3 id="BrokenSymtry"><a href="#BrokenSymtry" class="headerlink" title="@BrokenSymtry"></a>@BrokenSymtry</h3><p>&emsp;<em>2014-10-28 00:50:16 来自红米手机</em><br>&emsp;&emsp;<br>&emsp;&emsp;And the hangover doesn’t pass. Nothing’s ever built to last .<br>&emsp;&emsp;</p>
+<div class="note modern"><h3 id="BrokenSymtry">@BrokenSymtry</h3>
+<p> <em>2013-01-16 00:01:19 来自S60客户端</em><br>
+  <br>
+  才明白即使爆炸 直到第一千次， 亦不想那震撼离开，还期望天清气朗 就算第一亿次，都想我看着能喝彩<br>
+  </p>
 </div>
-
 <hr>
-<div class="note modern"><h3 id="BrokenSymtry"><a href="#BrokenSymtry" class="headerlink" title="@BrokenSymtry"></a>@BrokenSymtry</h3><p>&emsp;<em>2014-11-14 01:36:49 来自红米手机</em><br>&emsp;&emsp;<br>&emsp;&emsp;Das beste, was du wissen kannst, darfst du den Buben doch nicht sagen.<br>&emsp;&emsp;<br><img src="https://tva3.sinaimg.cn/mw690/9fa4f905jw1em9w3splvxj20mi0oqgzv.jpg" alt="1"></p>
+<div class="note modern"><h3 id="BrokenSymtry">@BrokenSymtry</h3>
+<p> <em>2013-02-17 20:13:07 来自S60客户端</em><br>
+  <br>
+  Asteroid belt, Kuiper Belt, Oort cloud.<br>
+  </p>
 </div>
-
 <hr>
-<div class="note modern"><h3 id="BrokenSymtry"><a href="#BrokenSymtry" class="headerlink" title="@BrokenSymtry"></a>@BrokenSymtry</h3><p>&emsp;<em>2014-12-21 16:31:42 来自微博 weibo.com</em><br>&emsp;&emsp;<br>&emsp;&emsp;Fly me to the moon，and let me play among the stars. Let me see what Spring is like on Jupiter and Mars ~<br>&emsp;&emsp;<br><img src="https://tva4.sinaimg.cn/large/9fa4f905jw1enhdv03pvcj20zk0m8jy4.jpg" alt="1"><br>&emsp;&emsp;</p>
+<div class="note modern"><h3 id="BrokenSymtry">@BrokenSymtry</h3>
+<p> <em>2013-02-21 12:35:02 来自S60客户端</em><br>
+  <br>
+  Rock德普<br>
+  </p>
 </div>
-
 <hr>
-</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="https://chaosmoz.github.io">Z</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://chaosmoz.github.io/posts/95065b96/">https://chaosmoz.github.io/posts/95065b96/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://chaosmoz.github.io" target="_blank">Z's Blog</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a><a class="post-meta__tags" href="/tags/%E5%BE%AE%E5%8D%9A%E8%AE%B0%E5%BD%95/">微博记录</a></div><div class="post_share"><div class="social-share" data-image="/images/page_topimg/gallery_photograph.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-full"><a href="/posts/32812b2e/" title="微博记录 2015"><img class="cover" src="/images/page_topimg/gallery_photograph.jpg" onerror="onerror=null;src='/images/page_topimg/post_404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">微博记录 2015</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/posts/32812b2e/" title="微博记录 2015"><img class="cover" src="/images/page_topimg/gallery_photograph.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2015-12-31</div><div class="title">微博记录 2015</div></div></a></div><div><a href="/posts/e80e141c/" title="飞行札记（一）"><img class="cover" src="/images/post_topimg/%E9%A3%9E%E8%A1%8C%E6%9C%AD%E8%AE%B0_01.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-04-10</div><div class="title">飞行札记（一）</div></div></a></div><div><a href="/posts/d818f8c4/" title="飞行札记（二）"><img class="cover" src="/images/post_topimg/%E9%A3%9E%E8%A1%8C%E6%9C%AD%E8%AE%B0_01.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-04-20</div><div class="title">飞行札记（二）</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="twikoo-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/images/page_topimg/avatar.png" onerror="this.onerror=null;this.src='/images/page_topimg/link_404.gif'" alt="avatar"/></div><div class="author-info__name">Z</div><div class="author-info__description">分享关于 Z 的不规则运动</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">6</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">5</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/chaosmoz"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/chaosmoz" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="https://weibo.com/MrOnkey/home" target="_blank" title="新浪微博"><i class="fab fa-weibo"></i></a><a class="social-icon" href="https://www.zhihu.com/people/zouzhaoyu" target="_blank" title="知乎"><i class="fab fa-zhihu"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">备用网地：zuus.gitee.io</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content is-expand"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">1.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">2.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">3.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">4.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">5.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">6.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">7.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">8.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">9.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">10.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">11.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">12.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">13.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">14.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">15.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">16.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">17.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">18.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">19.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">20.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">21.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">22.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">23.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">24.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">25.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">26.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">27.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">28.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">29.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">30.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">31.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">32.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">33.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">34.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">35.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">36.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">37.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">38.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">39.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">40.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">41.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">42.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">43.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">44.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">45.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">46.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">47.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">48.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">49.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">50.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">51.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">52.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">53.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">54.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">55.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">56.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">57.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">58.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">59.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">60.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">61.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">62.</span> <span class="toc-text">@BrokenSymtry</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/posts/eacfc4c8/" title="个人博客网站搭建与优化"><img src="/images/post_topimg/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA%E4%B8%8E%E4%BC%98%E5%8C%96_01.jpg" onerror="this.onerror=null;this.src='/images/page_topimg/post_404.jpg'" alt="个人博客网站搭建与优化"/></a><div class="content"><a class="title" href="/posts/eacfc4c8/" title="个人博客网站搭建与优化">个人博客网站搭建与优化</a><time datetime="2023-01-21T16:00:00.000Z" title="发表于 2023-01-22 00:00:00">2023-01-22</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/95065b96/" title="飞行札记（三）"><img src="/images/post_topimg/%E9%A3%9E%E8%A1%8C%E6%9C%AD%E8%AE%B0_01.jpg" onerror="this.onerror=null;this.src='/images/page_topimg/post_404.jpg'" alt="飞行札记（三）"/></a><div class="content"><a class="title" href="/posts/95065b96/" title="飞行札记（三）">飞行札记（三）</a><time datetime="2022-04-25T16:00:00.000Z" title="发表于 2022-04-26 00:00:00">2022-04-26</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/d818f8c4/" title="飞行札记（二）"><img src="/images/post_topimg/%E9%A3%9E%E8%A1%8C%E6%9C%AD%E8%AE%B0_01.jpg" onerror="this.onerror=null;this.src='/images/page_topimg/post_404.jpg'" alt="飞行札记（二）"/></a><div class="content"><a class="title" href="/posts/d818f8c4/" title="飞行札记（二）">飞行札记（二）</a><time datetime="2022-04-19T16:00:00.000Z" title="发表于 2022-04-20 00:00:00">2022-04-20</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('/images/page_topimg/gallery_photograph.jpg')"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2023 By Z</div><div class="footer_custom_text">We are time flires.<p><a target="_blank" href="https://hexo.io/"><img src="https://img.shields.io/badge/Frame-Hexo-blue?style=flat&logo=hexo" title="博客框架为Hexo"></a>&nbsp;<a target="_blank" href="https://butterfly.js.org/"><img src="https://img.shields.io/badge/Theme-Butterfly-6513df?style=flat&logo=bitdefender" title="主题采用butterfly"></a>&nbsp;<a target="_blank" href="https://www.jsdelivr.com/"><img src="https://img.shields.io/badge/CDN-jsDelivr-orange?style=flat&logo=jsDelivr" title="本站使用JsDelivr为静态资源提供CDN加速"></a>&nbsp;<a target="_blank" href="https://github.com/"><img src="https://img.shields.io/badge/Source-Github-d021d6?style=flat&logo=GitHub" title="本站项目由Gtihub托管"></a>&nbsp;<a target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="https://img.shields.io/badge/Copyright-BY--NC--SA%204.0-d42328?style=flat&logo=Claris" title="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可"></a></p></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"><script>(()=>{
+<div class="note modern"><h3 id="BrokenSymtry">@BrokenSymtry</h3>
+<p> <em>2013-02-24 17:51:00 来自S60客户端</em><br>
+  <br>
+  last thing I remember, I was running for the door. I had find the passage back, to the place I was before. …~ [音乐]<br>
+  </p>
+</div>
+<hr>
+<div class="note modern"><h3 id="BrokenSymtry">@BrokenSymtry</h3>
+<p> <em>2013-03-02 00:41:46 来自S60客户端</em><br>
+  <br>
+  我只是想要知道 有关于这个世界的一切 。<br>
+  </p>
+</div>
+<hr>
+<div class="note modern"><h3 id="BrokenSymtry">@BrokenSymtry</h3>
+<p> <em>2013-03-11 01:05:02 来自S60客户端</em><br>
+  <br>
+  察其始而本无生<br>
+  </p>
+</div>
+<hr>
+<div class="note modern"><h3 id="BrokenSymtry">@BrokenSymtry</h3>
+<p> <em>2013-03-13 01:07:34 来自S60客户端</em><br>
+  <br>
+  生命只是一种抗逆的体现。<br>
+  </p>
+</div>
+<hr>
+<div class="note modern"><h3 id="BrokenSymtry">@BrokenSymtry</h3>
+<p> <em>2013-03-28 22:22:00 来自uc浏览器ios</em><br>
+  <br>
+  说来实在嘲讽。<br>
+  </p>
+</div>
+<hr>
+<div class="note modern"><h3 id="BrokenSymtry">@BrokenSymtry</h3>
+<p> <em>2013-03-30 13:05:13 来自uc浏览器ios</em><br>
+  <br>
+  有什么抛不低。<br>
+  </p>
+</div>
+<hr>
+<div class="note modern"><h3 id="BrokenSymtry">@BrokenSymtry</h3>
+<p> <em>2013-04-19 23:51:41 来自S60客户端</em><br>
+  <br>
+  Starry starry night, paint your palette blue and gray~[音乐]<br>
+  </p>
+</div>
+<hr>
+<div class="note modern"><h3 id="BrokenSymtry">@BrokenSymtry</h3>
+<p> <em>2013-04-27 23:35:13 来自S60客户端</em><br>
+  <br>
+  或许那些未知本身 就是美的一部分 。<br>
+  </p>
+</div>
+<hr>
+<div class="note modern"><h3 id="BrokenSymtry">@BrokenSymtry</h3>
+<p> <em>2013-05-06 00:10:07 来自S60客户端</em><br>
+  <br>
+  好风光似幻似虚，谁明人生乐趣 ~ [音乐]<br>
+  </p>
+</div>
+<hr>
+<div class="note modern"><h3 id="BrokenSymtry">@BrokenSymtry</h3>
+<p> <em>2013-05-11 17:10:56 来自S60客户端</em><br>
+  <br>
+  The mask I wear is one .<br>
+  </p>
+</div>
+<hr>
+<div class="note modern"><h3 id="BrokenSymtry">@BrokenSymtry</h3>
+<p> <em>2013-05-20 00:53:12 来自S60客户端</em><br>
+  <br>
+  Moroccan moonlight in your eyes ~[音乐]<br>
+  </p>
+</div>
+<hr>
+<div class="note modern"><h3 id="BrokenSymtry">@BrokenSymtry</h3>
+<p> <em>2013-05-25 19:52:35 来自微博桌面</em><br>
+  <br>
+  感谢你，歌声里伴我跨过~[音乐]<br>
+  </p>
+</div>
+<hr>
+<div class="note modern"><h3 id="BrokenSymtry">@BrokenSymtry</h3>
+<p> <em>2013-06-01 01:34:37 来自S60客户端</em><br>
+  <br>
+  像培养皿里的细菌一样，重复上演？<br>
+  </p>
+</div>
+<hr>
+<div class="note modern"><h3 id="BrokenSymtry">@BrokenSymtry</h3>
+<p> <em>2013-06-23 01:50:31 来自S60客户端</em><br>
+  <br>
+  如果说之后的一切都是建立在放错位置的砖块之上，或许有一天它就会崩塌，像反粒子那样湮灭吧？<br>
+  </p>
+</div>
+<hr>
+<div class="note modern"><h3 id="BrokenSymtry">@BrokenSymtry</h3>
+<p> <em>2013-07-07 21:17:55 来自微博 <a target="_blank" rel="noopener" href="http://weibo.com">weibo.com</a></em><br>
+  <br>
+  莫名的生存，莫名的死去，花 风 城市 都是如此。<br>
+  </p>
+</div>
+<hr>
+<div class="note modern"><h3 id="BrokenSymtry">@BrokenSymtry</h3>
+<p> <em>2013-07-10 01:54:53 来自S60客户端</em><br>
+  <br>
+  Perhaps there is no answer .<br>
+  </p>
+</div>
+<hr>
+<div class="note modern"><h3 id="BrokenSymtry">@BrokenSymtry</h3>
+<p> <em>2013-07-23 16:50:37 来自微博手机版</em><br>
+  <br>
+  以前人们在四月开始收获 躺在高高的谷堆上面笑着~[音乐]<br>
+  </p>
+</div>
+<hr>
+<div class="note modern"><h3 id="BrokenSymtry">@BrokenSymtry</h3>
+<p> <em>2013-08-08 11:59:36 来自Android客户端</em><br>
+  <br>
+  “迄今所有实验都肯定了量子力学的正确性， 但这只表明：它在人类迄今实践所及的领域是正确的。量子力学并非绝对真理。量子力学并没有，也不可能关闭人们进一步认识自然界的道路。量子力学与广义相对论之间的矛盾并未解 决。”—— 曾谨言<br>
+  </p>
+</div>
+<hr>
+<div class="note modern"><h3 id="BrokenSymtry">@BrokenSymtry</h3>
+<p> * 2013-08-09 08:28:35 来自Android客户端*<br>
+  <br>
+  &quot; That’s the beauty of music. They can’t take that away from you. &quot;<br>
+  </p>
+</div>
+<hr>
+<div class="note modern"><h3 id="BrokenSymtry">@BrokenSymtry</h3>
+<p> <em>2013-08-12 02:39:47 来自爱马克</em><br>
+  <br>
+  “真正的界限并不是万有理论，而恰恰是那些我们根本没有意识到的问题。”————[小红猪]知识之界：有些事我们永远不会懂<br>
+  </p>
+</div>
+<hr>
+<div class="note modern"><h3 id="BrokenSymtry">@BrokenSymtry</h3>
+<p> <em>2013-08-19 02:00:31 来自Android客户端</em><br>
+  <br>
+  无穷复杂，因而有无穷的创造性。<br>
+  </p>
+</div>
+<hr>
+<div class="note modern"><h3 id="BrokenSymtry">@BrokenSymtry</h3>
+<p> <em>2013-08-31 18:04:49 来自Android客户端</em><br>
+  <br>
+  高一闲趣。<br>
+  </p>
+</div>
+<hr>
+<div class="note modern"><h3 id="BrokenSymtry">@BrokenSymtry</h3>
+<p> <em>2013-09-14 22:10:49 来自Android客户端</em><br>
+  <br>
+  “星空”<br>
+  </p>
+</div>
+<hr>
+<div class="note modern"><h3 id="BrokenSymtry">@BrokenSymtry</h3>
+<p> <em>2013-10-01 01:37:05 来自Android客户端</em><br>
+  <br>
+  刻了许多光盘，却没人有唱片机。或许那些彩虹一样的条纹也是不会让人感到无聊吧。<br>
+  </p>
+</div>
+<hr>
+<div class="note modern"><h3 id="BrokenSymtry">@BrokenSymtry</h3>
+<p> <em>2013-10-27 02:54:20 来自Android客户端</em><br>
+  <br>
+  “Since the beginning of my body changes in a number of wonderful, I began to reality a lot of things are not quite the same view”.—— Wikus . 《DISTRICT 9》<br>
+  </p>
+</div>
+<hr>
+<div class="note modern"><h3 id="BrokenSymtry">@BrokenSymtry</h3>
+<p> <em>2013-12-26 01:33:43 来自Android客户端</em><br>
+  <br>
+  “那笑容是夏季~[音乐]<br>
+  </p>
+</div>
+<hr>
+<div class="note modern"><h3 id="BrokenSymtry">@BrokenSymtry</h3>
+<p> <em>2013-12-31 11:48:26 来自Android客户端</em><br>
+  <br>
+  B-)<br>
+  </p>
+</div>
+<hr>
+<div class="note modern"><h3 id="BrokenSymtry">@BrokenSymtry</h3>
+<p> <em>2014-01-04 13:09:24 来自Android客户端</em><br>
+  <br>
+  喧闹映衬下的一丝安静，充斥着内心的律动，像无规则波动中的一小段螺旋线，变得让人着迷。♪ ​​​<br>
+  </p>
+</div>
+<hr>
+<div class="note modern"><h3 id="BrokenSymtry">@BrokenSymtry</h3>
+<p> <em>2014-01-16 00:08:00 来自Android客户端</em><br>
+  <br>
+  常情如此不可推卸～<br>
+  </p>
+</div>
+<hr>
+<div class="note modern"><h3 id="BrokenSymtry">@BrokenSymtry</h3>
+<p> <em>2014-01-17 23:10:52 来自Android客户端</em><br>
+  <br>
+  那些梦的碎片里，一直流淌着一种奇异的忧伤。<br>
+  </p>
+</div>
+<hr>
+<div class="note modern"><h3 id="BrokenSymtry">@BrokenSymtry</h3>
+<p> <em>2014-01-17 23:10:52 来自Android客户端</em><br>
+  <br>
+  在重低音里溶解吧<br>
+  </p>
+</div>
+<hr>
+<div class="note modern"><h3 id="BrokenSymtry">@BrokenSymtry</h3>
+<p> <em>2014-02-01 21:29:06 来自Android客户端</em><br>
+  <br>
+  学校。<br>
+  </p>
+</div>
+<hr>
+<div class="note modern"><h3 id="BrokenSymtry">@BrokenSymtry</h3>
+<p> <em>2014-02-06 02:33:00 来自Android客户端</em><br>
+  <br>
+  夜行动物 (▔ ▔) 。_冷雨夜 ​​​♪<br>
+  </p>
+</div>
+<hr>
+<div class="note modern"><h3 id="BrokenSymtry">@BrokenSymtry</h3>
+<p> <em>2014-03-06 01:15:01 来自Android客户端</em><br>
+  <br>
+  “那么一瞬，彷佛一切都可以得到宽恕”————《核融合炉》<br>
+  </p>
+</div>
+<hr>
+<h2 id="swig￼48"><div class="note modern"><h3 id="BrokenSymtry">@BrokenSymtry</h3>
+<p> <em>2014-04-05 16:31:09 来自Android客户端</em><br>
+  <br>
+  My life is brilliant, my love is pure, I saw an angel, of that I’m sure~<br>
+  <br>
+<img src="https://tva2.sinaimg.cn/mw690/9fa4f905jw1ef4sqegpnkj20bx08c74w.jpg" alt="1"></p>
+</div></h2>
+<div class="note modern"><h3 id="BrokenSymtry">@BrokenSymtry</h3>
+<p> <em>2014-04-13 23:59:18 来自Android客户端</em><br>
+  <br>
+  出现在学校的异次元带路人<br>
+  </p>
+</div>
+<hr>
+<div class="note modern"><h3 id="BrokenSymtry">@BrokenSymtry</h3>
+<p> <em>2014-04-22 23:49:19 来自Android客户端</em><br>
+  <br>
+  放则放矣，庸何伤乎。<br>
+  </p>
+</div>
+<hr>
+<div class="note modern"><h3 id="BrokenSymtry">@BrokenSymtry</h3>
+<p> <em>2014-05-20 23:09:13 来自Android客户端</em><br>
+  <br>
+  · 堆芯溶解<br>
+  </p>
+</div>
+<hr>
+<div class="note modern"><h3 id="BrokenSymtry">@BrokenSymtry</h3>
+<p> <em>2014-06-21 05:18:21 来自Android客户端</em><br>
+  <br>
+  从前谈电影，心中最爱是看剧情变好，而不感牵强。<br>
+  </p>
+</div>
+<hr>
+<div class="note modern"><h3 id="BrokenSymtry">@BrokenSymtry</h3>
+<p> <em>2014-07-12 04:57:33 来自Android客户端</em><br>
+  <br>
+  今晚风很轻云很美月亮太圆 天快亮了鸟儿醒了我睡不着。<br>
+  </p>
+</div>
+<hr>
+<div class="note modern"><h3 id="BrokenSymtry">@BrokenSymtry</h3>
+<p> <em>2014-07-21 23:17:24 来自360安全浏览器</em><br>
+  <br>
+  我听见夏的离去。<br>
+  </p>
+</div>
+<hr>
+<div class="note modern"><h3 id="BrokenSymtry">@BrokenSymtry</h3>
+<p> <em>2014-07-05 05:24:19 来自Android客户端</em><br>
+  <br>
+  蓝色的新月藏在城市后面。<br>
+  </p>
+</div>
+<hr>
+<div class="note modern"><h3 id="BrokenSymtry">@BrokenSymtry</h3>
+<p> <em>这就是“不可視境界限”吗哈哈，sayounara 。</em><br>
+  <br>
+  这就是“不可視境界限”吗哈哈，sayounara  。<br>
+  <br>
+<img src="https://tva2.sinaimg.cn/mw690/9fa4f905jw1ejh4mqkmpfj218g0xcac0.jpg" alt="1"></p>
+</div>
+<hr>
+<div class="note modern"><h3 id="BrokenSymtry">@BrokenSymtry</h3>
+<p> <em>2014-08-25 03:08:01 来自红米手机</em><br>
+  <br>
+  再见了，石狮的夜 🎃 。 ​​​<br>
+  </p>
+ <div align=center> <img src="https://tva2.sinaimg.cn/mw690/9fa4f905jw1ejobjqlaq2j20qo0zkdw5.jpg" width = 60%/> </div></div>
+<hr>
+<div class="note modern"><h3 id="BrokenSymtry">@BrokenSymtry</h3>
+<p> <em>2014-10-24 01:32:04 来自红米手机</em><br>
+  <br>
+  巨型异变细胞罐头。 ​​​</p>
+ <div align=center> <img src="https://tva4.sinaimg.cn/mw690/9fa4f905jw1ellllntxcej20xc18gjzx.jpg" width = 50%/> </div></div>
+<hr>
+<div class="note modern"><h3 id="BrokenSymtry">@BrokenSymtry</h3>
+<p> <em>2014-10-28 00:50:16 来自红米手机</em><br>
+  <br>
+  And the hangover doesn’t pass. Nothing’s ever built to last .<br>
+  </p>
+</div>
+<hr>
+<div class="note modern"><h3 id="BrokenSymtry">@BrokenSymtry</h3>
+<p> <em>2014-11-14 01:36:49 来自红米手机</em><br>
+  <br>
+  Das beste, was du wissen kannst, darfst du den Buben doch nicht sagen.<br>
+  <br>
+<img src="https://tva3.sinaimg.cn/mw690/9fa4f905jw1em9w3splvxj20mi0oqgzv.jpg" alt="1"></p>
+</div>
+<hr>
+<div class="note modern"><h3 id="BrokenSymtry">@BrokenSymtry</h3>
+<p> <em>2014-12-21 16:31:42 来自微博 <a target="_blank" rel="noopener" href="http://weibo.com">weibo.com</a></em><br>
+  <br>
+  Fly me to the moon，and let me play among the stars. Let me see what Spring is like on Jupiter and Mars ~<br>
+  <br>
+<img src="https://tva4.sinaimg.cn/large/9fa4f905jw1enhdv03pvcj20zk0m8jy4.jpg" alt="1"><br>
+  </p>
+</div>
+<hr>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="https://chaosmoz.github.io">Z</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://chaosmoz.github.io/posts/95065b96/">https://chaosmoz.github.io/posts/95065b96/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://chaosmoz.github.io" target="_blank">Z's Blog</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a><a class="post-meta__tags" href="/tags/%E5%BE%AE%E5%8D%9A%E8%AE%B0%E5%BD%95/">微博记录</a></div><div class="post_share"><div class="social-share" data-image="/images/page_topimg/gallery_photograph.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-full"><a href="/posts/95065b96/" title="微博记录 2014-Earlier"><img class="cover" src="/images/page_topimg/gallery_photograph.jpg" onerror="onerror=null;src='/images/page_topimg/post_404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">微博记录 2014-Earlier</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/posts/32812b2e/" title="微博记录 2015"><img class="cover" src="/images/page_topimg/gallery_photograph.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2015-12-31</div><div class="title">微博记录 2015</div></div></a></div><div><a href="/posts/ab887a94/" title="微博记录 2018-2017"><img class="cover" src="/images/page_topimg/gallery_photograph.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2018-12-31</div><div class="title">微博记录 2018-2017</div></div></a></div><div><a href="/posts/7d02511a/" title="微博记录 2020-2019"><img class="cover" src="/images/page_topimg/gallery_photograph.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2020-12-31</div><div class="title">微博记录 2020-2019</div></div></a></div><div><a href="/posts/e80e141c/" title="飞行札记（一）"><img class="cover" src="/images/post_topimg/%E9%A3%9E%E8%A1%8C%E6%9C%AD%E8%AE%B0_01.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-04-10</div><div class="title">飞行札记（一）</div></div></a></div><div><a href="/posts/d818f8c4/" title="飞行札记（二）"><img class="cover" src="/images/post_topimg/%E9%A3%9E%E8%A1%8C%E6%9C%AD%E8%AE%B0_01.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-04-20</div><div class="title">飞行札记（二）</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="twikoo-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/images/page_topimg/avatar.png" onerror="this.onerror=null;this.src='/images/page_topimg/link_404.gif'" alt="avatar"/></div><div class="author-info__name">Z</div><div class="author-info__description">分享关于 Z 的不规则运动</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">10</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">5</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/chaosmoz"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/chaosmoz" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="https://weibo.com/MrOnkey/home" target="_blank" title="新浪微博"><i class="fab fa-weibo"></i></a><a class="social-icon" href="https://www.zhihu.com/people/zouzhaoyu" target="_blank" title="知乎"><i class="fab fa-zhihu"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">国内请访问备用链:zuus.gitee.io</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content is-expand"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">1.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">2.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">3.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">4.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">5.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">6.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">7.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">8.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">9.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">10.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">11.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">12.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">13.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">14.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">15.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">16.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">17.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">18.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">19.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">20.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">21.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">22.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">23.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">24.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">25.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">26.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">27.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">28.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">29.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">30.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">31.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">32.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">33.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">34.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">35.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">36.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">37.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">38.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">39.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">40.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">41.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">42.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">43.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">44.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">45.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">46.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">47.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">48.</span> <span class="toc-text">@BrokenSymtry</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#swig%EF%BF%BC48"><span class="toc-number"></span> <span class="toc-text">@BrokenSymtry
+ 2014-04-05 16:31:09 来自Android客户端
+
+  
+
+  My life is brilliant, my love is pure, I saw an angel, of that I’m sure~
+
+  
+
+
+</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">1.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">2.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">3.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">4.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">5.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">6.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">7.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">8.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">9.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">10.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">11.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">12.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">13.</span> <span class="toc-text">@BrokenSymtry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BrokenSymtry"><span class="toc-number">14.</span> <span class="toc-text">@BrokenSymtry</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/posts/eacfc4c8/" title="个人博客网站搭建与优化"><img src="/images/post_topimg/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA%E4%B8%8E%E4%BC%98%E5%8C%96_01.jpg" onerror="this.onerror=null;this.src='/images/page_topimg/post_404.jpg'" alt="个人博客网站搭建与优化"/></a><div class="content"><a class="title" href="/posts/eacfc4c8/" title="个人博客网站搭建与优化">个人博客网站搭建与优化</a><time datetime="2023-01-21T16:00:00.000Z" title="发表于 2023-01-22 00:00:00">2023-01-22</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/95065b96/" title="飞行札记（三）"><img src="/images/post_topimg/%E9%A3%9E%E8%A1%8C%E6%9C%AD%E8%AE%B0_01.jpg" onerror="this.onerror=null;this.src='/images/page_topimg/post_404.jpg'" alt="飞行札记（三）"/></a><div class="content"><a class="title" href="/posts/95065b96/" title="飞行札记（三）">飞行札记（三）</a><time datetime="2022-04-25T16:00:00.000Z" title="发表于 2022-04-26 00:00:00">2022-04-26</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/d818f8c4/" title="飞行札记（二）"><img src="/images/post_topimg/%E9%A3%9E%E8%A1%8C%E6%9C%AD%E8%AE%B0_01.jpg" onerror="this.onerror=null;this.src='/images/page_topimg/post_404.jpg'" alt="飞行札记（二）"/></a><div class="content"><a class="title" href="/posts/d818f8c4/" title="飞行札记（二）">飞行札记（二）</a><time datetime="2022-04-19T16:00:00.000Z" title="发表于 2022-04-20 00:00:00">2022-04-20</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('/images/page_topimg/gallery_photograph.jpg')"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2023 By Z</div><div class="footer_custom_text">We are time flires.<p><a target="_blank" href="https://hexo.io/"><img src="https://img.shields.io/badge/Frame-Hexo-blue?style=flat&logo=hexo" title="博客框架为Hexo"></a>&nbsp;<a target="_blank" href="https://butterfly.js.org/"><img src="https://img.shields.io/badge/Theme-Butterfly-6513df?style=flat&logo=bitdefender" title="主题采用butterfly"></a>&nbsp;<a target="_blank" href="https://www.jsdelivr.com/"><img src="https://img.shields.io/badge/CDN-jsDelivr-orange?style=flat&logo=jsDelivr" title="本站使用JsDelivr为静态资源提供CDN加速"></a>&nbsp;<a target="_blank" href="https://github.com/"><img src="https://img.shields.io/badge/Source-Github-d021d6?style=flat&logo=GitHub" title="本站项目由Gtihub托管"></a>&nbsp;<a target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="https://img.shields.io/badge/Copyright-BY--NC--SA%204.0-d42328?style=flat&logo=Claris" title="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可"></a></p></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"><script>(()=>{
   const init = () => {
     twikoo.init(Object.assign({
       el: '#twikoo-wrap',
