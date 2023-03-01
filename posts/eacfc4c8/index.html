@@ -228,7 +228,7 @@ Port 443
 <p>更多问题可以看官方指南 使用 SSH 连接到 GitHub - GitHub Docs</p>
 <h3 id="部署文件至GitHub仓库"><a href="#部署文件至GitHub仓库" class="headerlink" title="部署文件至GitHub仓库"></a>部署文件至GitHub仓库</h3><p>部署之前先把github仓库里默认的branch：”main”修改为”master”。</p>
 <p>打开Hexo 根目录的“_config.yml”文件，在文件最后一行找到以下字句并补充。</p>
-<p>  deploy:<br>    type: git<br>    repo: <a href="mailto:&#103;&#x69;&#116;&#64;&#103;&#105;&#x74;&#x68;&#x75;&#98;&#46;&#99;&#111;&#x6d;">&#103;&#x69;&#116;&#64;&#103;&#105;&#x74;&#x68;&#x75;&#98;&#46;&#99;&#111;&#x6d;</a>:你的github帐号名/你的github帐号名.github.io.git<br>    branch: master</p>
+<p>  deploy:<br>    type: git<br>    repo: <a href="mailto:&#x67;&#x69;&#x74;&#64;&#x67;&#105;&#116;&#x68;&#117;&#98;&#x2e;&#x63;&#111;&#x6d;">&#x67;&#x69;&#x74;&#64;&#x67;&#105;&#116;&#x68;&#117;&#98;&#x2e;&#x63;&#111;&#x6d;</a>:你的github帐号名/你的github帐号名.github.io.git<br>    branch: master</p>
 <p>这一步就是告诉hexo把你的文件推到你仓库中的哪个分支去。</p>
 <p>安装deploy-git命令包（不安装就没法用部署命令）:<br><code>npm install hexo-deployer-git</code><br>清除缓存文件<br><code>hexo clean</code><br>就是清空上次部署时生成的文件，第一次不用输，以后每次部署前输入。<br>生成静态页面<br><code>hexo g</code><br>部署<br>当执行<code>hexo d</code>时，Hexo 会将public目录中的文件和目录推送至_config.yml中指定的远端仓库和分支中，并且完全覆盖该分支下的已有内容。<br><code>hexo d</code><br>显示<code>INFO Deploy done: git</code>就是完成部署，检查一下执行日志有无异常。</p>
 <p>【注】遇到<code>ERROR Deployer not found: git</code>报错是因为部署插件没安装，再安装一下:<br><code>npm install --save hexo-deployer-git</code><br>【注】第一次可能会遇到”warning: LF will be replaced by CRLF in ……”问题，是因为windows中的换行符为 CRLF ， 而在linux下的换行符为 LF，所以出现符号转义问题，输入以下命令将自动转换关闭就行：<br><code>git config --global core.autoCRLF false</code><br>【注】遇到“(node:87224) Warning: Accessing non-existent property ‘column’ of module exports inside circular dependency”等一系列类似node问题。重装hexo-renderer-stylus：<br><code>npm remove hexo-renderer-stylus</code><br><code>npm add hexo-renderer-stylus</code><br>打开个人网站的URL（“你的帐号名.github.io”）就可以在公网访问自己的网站了。</p>
@@ -917,7 +917,7 @@ top_img: /images/messageboard.jpg
   const init = () => {
     twikoo.init(Object.assign({
       el: '#twikoo-wrap',
-      envId: 'https://vercel-phi-orcin.vercel.app/',
+      envId: 'https://zuus.zeabur.app',
       region: '',
       onCommentLoaded: function () {
         btf.loadLightbox(document.querySelectorAll('#twikoo .tk-content img:not(.tk-owo-emotion)'))
@@ -929,7 +929,7 @@ top_img: /images/messageboard.jpg
     const countELement = document.getElementById('twikoo-count')
     if(!countELement) return
     twikoo.getCommentsCount({
-      envId: 'https://vercel-phi-orcin.vercel.app/',
+      envId: 'https://zuus.zeabur.app',
       region: '',
       urls: [window.location.pathname],
       includeReply: false
